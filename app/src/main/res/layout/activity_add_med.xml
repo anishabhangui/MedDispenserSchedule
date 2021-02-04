@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:clickable="true"
+    android:focusableInTouchMode="true">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter Medication Name"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:id="@+id/mednametv"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/mednametv"
+        android:id="@+id/mednameinput"
+        android:hint="Medication Name" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Enter Time:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/mednameinput"
+        android:id="@+id/timetv"/>
+
+    <EditText
+        android:id="@+id/timeinput"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:hint="Time"
+        android:layout_below="@id/timetv"
+        android:inputType="datetime"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Enter # of Pills to Take:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/timeinput"
+        android:id="@+id/numpilltv"/>
+
+    <EditText
+        android:id="@+id/numbpillinput"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:hint="# of Pills"
+        android:inputType="number"
+        android:layout_below="@id/numpilltv"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pick Days to Take Pill"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:id="@+id/pickdaytv"
+        android:layout_below="@+id/numbpillinput"/>
+
+    <Button
+        android:id="@+id/monday"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pickdaytv"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:text="M"
+        app:backgroundTint="#671111" />
+
+    <Button
+        android:id="@+id/tuesday"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="T"
+        android:layout_below="@+id/pickdaytv"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@id/monday"
+        app:backgroundTint="#671111" />
+
+    <Button
+        android:id="@+id/wednesday"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pickdaytv"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/tuesday"
+        android:text="W"
+        app:backgroundTint="#671111" />
+
+    <Button
+        android:id="@+id/thursday"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pickdaytv"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/wednesday"
+        android:text="R"
+        app:backgroundTint="#671111" />
+
+    <Button
+        android:id="@+id/friday"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="F"
+        android:layout_below="@+id/monday"
+        android:layout_marginLeft="50dp"
+        app:backgroundTint="#671111" />
+
+    <Button
+        android:id="@+id/saturday"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Sat"
+        android:layout_below="@+id/monday"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/friday"
+        app:backgroundTint="#671111" />
+
+    <Button
+        android:id="@+id/sunday"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Sun"
+        android:layout_below="@+id/monday"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/saturday"
+        app:backgroundTint="#671111" />
+
+
+
+    <Button
+        android:id="@+id/addbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Submit"
+        android:layout_below="@id/friday"
+        android:layout_centerInParent="true"
+        app:backgroundTint="#671111" />
+
+
+</RelativeLayout>
+
+
+
+
+
